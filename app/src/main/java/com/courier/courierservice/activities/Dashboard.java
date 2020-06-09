@@ -49,7 +49,7 @@ public class Dashboard extends BaseActivity {
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.colorWhite));
-
+        binding.toolbar.titleTv.setText("Company Details");
         setSupportActionBar(binding.toolbar.mToolbar);
 
         if (getSupportActionBar()!= null){
@@ -74,10 +74,12 @@ public class Dashboard extends BaseActivity {
         switch (menuItem.getItemId()){
             case R.id.nav_create_order:
                 switchToFragment(new BookOrder());
+                binding.toolbar.titleTv.setText("Book Order");
                 break;
 
             case R.id.nav_cmpny_details:
                 switchToFragment(new FillCompanyDetails());
+                binding.toolbar.titleTv.setText("Company Details");
                 break;
         }
 

@@ -143,11 +143,12 @@
                         android:orientation="horizontal"
                         android:layout_marginTop="@dimen/_15sdp">
 
-                    <androidx.appcompat.widget.AppCompatEditText
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/ed_doc_type_a"
-                        android:hint="document type"
+                         android:text="Document"
+                        android:textAlignment="center"
                         android:maxLength="20"
                         android:paddingStart="@dimen/_5sdp"
                         android:paddingBottom="@dimen/_5sdp"
@@ -180,11 +181,12 @@
                         android:orientation="horizontal"
                         android:layout_marginTop="@dimen/_10sdp">
 
-                        <androidx.appcompat.widget.AppCompatEditText
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/ed_non_doc_type_a"
-                            android:hint="document type"
+                            android:text="Non Document"
+                            android:textAlignment="center"
                             android:maxLength="20"
                             android:paddingStart="@dimen/_5sdp"
                             android:paddingBottom="@dimen/_5sdp"
@@ -225,11 +227,12 @@
                         android:orientation="horizontal"
                         android:layout_marginTop="@dimen/_15sdp">
 
-                        <androidx.appcompat.widget.AppCompatEditText
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/ed_doc_type_b"
-                            android:hint="document type"
+                            android:text="Document"
+                            android:textAlignment="center"
                             android:maxLength="20"
                             android:paddingStart="@dimen/_5sdp"
                             android:paddingBottom="@dimen/_5sdp"
@@ -262,11 +265,12 @@
                         android:orientation="horizontal"
                         android:layout_marginTop="@dimen/_10sdp">
 
-                        <androidx.appcompat.widget.AppCompatEditText
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/ed_non_doc_type_b"
-                            android:hint="document type"
+                            android:text="Non Document"
+                            android:textAlignment="center"
                             android:maxLength="20"
                             android:paddingStart="@dimen/_5sdp"
                             android:paddingBottom="@dimen/_5sdp"
@@ -310,11 +314,12 @@
                         android:orientation="horizontal"
                         android:layout_marginTop="@dimen/_15sdp">
 
-                        <androidx.appcompat.widget.AppCompatEditText
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/ed_doc_type_c"
-                            android:hint="document type"
+                            android:text="Document "
+                            android:textAlignment="center"
                             android:maxLength="20"
                             android:paddingStart="@dimen/_5sdp"
                             android:paddingBottom="@dimen/_5sdp"
@@ -347,11 +352,12 @@
                         android:orientation="horizontal"
                         android:layout_marginTop="@dimen/_10sdp">
 
-                        <androidx.appcompat.widget.AppCompatEditText
+                        <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/ed_non_doc_type_c"
-                            android:hint="document type"
+                            android:text="Non Document "
+                            android:textAlignment="center"
                             android:maxLength="20"
                             android:paddingStart="@dimen/_5sdp"
                             android:paddingBottom="@dimen/_5sdp"
