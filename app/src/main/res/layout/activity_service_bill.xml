@@ -3,12 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activities.ServiceBill"
         android:background="@drawable/bg_splash">
+        <include layout="@layout/layout_toolbar"
+            android:id="@+id/toolbar" />
         <androidx.core.widget.NestedScrollView
+            android:layout_below="@id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true">
@@ -38,12 +41,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Company"
                     android:paddingStart="@dimen/_5sdp"
                     android:background="@drawable/editbox_bg"
                     android:textSize="@dimen/_12sdp"
-                    android:paddingTop="@dimen/_3sdp"
-                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/segoe_ui"
                     android:textColor="@color/colorBlack"/>
@@ -82,14 +84,14 @@
                     android:paddingBottom="@dimen/_20sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_20sdp"
-                    android:background="@color/colorWhite">
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginTop="@dimen/_20sdp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Total"
+                        android:paddingStart="3dp"
                         android:textSize="@dimen/_15sdp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/segoe_ui"
@@ -100,18 +102,19 @@
                         android:layout_height="wrap_content"
                         android:text="756656.57"
                         android:layout_alignParentEnd="true"
-                        android:textSize="@dimen/_15sdp"
+                        android:textSize="@dimen/_13sdp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
                     <TextView
                         android:id="@+id/emergency_charge"
                         android:layout_below="@+id/total"
-                        android:layout_width="@dimen/_130sdp"
+                        android:layout_width="@dimen/_160sdp"
                         android:layout_height="wrap_content"
                         android:text="@string/emergency_charge"
                         android:textSize="@dimen/_12sdp"
                         android:layout_marginTop="10dp"
+                        android:paddingStart="@dimen/_3sdp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
                     <TextView
@@ -122,7 +125,7 @@
                         android:layout_below="@id/total"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
-                        android:textSize="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
@@ -133,6 +136,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/cgst"
                         android:textSize="@dimen/_12sdp"
+                        android:paddingStart="@dimen/_3sdp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
@@ -144,7 +148,7 @@
                         android:layout_below="@id/emergency_charge"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
-                        android:textSize="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
@@ -156,6 +160,7 @@
                         android:text="@string/sgst"
                         android:textSize="@dimen/_12sdp"
                         android:layout_marginTop="10dp"
+                        android:paddingStart="@dimen/_3sdp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
                     <TextView
@@ -166,7 +171,7 @@
                         android:layout_below="@id/cgst_value"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
-                        android:textSize="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
@@ -178,6 +183,7 @@
                         android:text="@string/round_off"
                         android:textSize="@dimen/_12sdp"
                         android:layout_marginTop="10dp"
+                        android:paddingStart="@dimen/_3sdp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
                     <TextView
@@ -188,7 +194,7 @@
                         android:layout_below="@id/sgst_value"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
-                        android:textSize="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
@@ -200,6 +206,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/bill_amount"
                         android:textSize="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_3sdp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/segoe_ui"
                         android:textColor="@color/colorBlack"/>
@@ -232,6 +239,6 @@
 
         </androidx.core.widget.NestedScrollView>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </layout>

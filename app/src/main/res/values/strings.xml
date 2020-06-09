@@ -10,4 +10,23 @@
     <string name="sgst">(+) SGST @9%</string>
     <string name="round_off">Round Off </string>
     <string name="bill_amount">Bill Amount</string>
+
+
+    <string-array name="company">
+        <item>Select company</item>
+        <item>abc</item>
+        <item>xyz</item>
+    </string-array>
+    <string-array name="zone">
+        <item>Select Zone</item>
+        <item>abc</item>
+        <item>xyz</item>
+    </string-array>
+
+    <string-array name="package_type">
+        <item>Select Package Type</item>
+        <item>Document</item>
+        <item>Non Document</item>
+    </string-array>
+
 </resources>
