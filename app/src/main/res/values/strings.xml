@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CourierService</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open nav drawer</string>
+    <string name="drawer_close">Close nav drawer</string>
+    <string name="emergency_charge">(+) Emergency Situation Surcharge @25%</string>
+    <string name="cgst">(+) CGST @9%</string>
+    <string name="sgst">(+) SGST @9%</string>
+    <string name="round_off">Round Off </string>
+    <string name="bill_amount">Bill Amount</string>
+</resources>

@@ -1,0 +1,38 @@
+package com.courier.courierservice.utils;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+
+public class SharedPref {
+
+    public SharedPreferences sharedPreferences;
+    public SharedPreferences.Editor editor;
+
+    public String PREFS_NAME = "courierService";
+
+
+    public SharedPref(Context context){
+        sharedPreferences = context.getSharedPreferences(PREFS_NAME,0);
+        editor = sharedPreferences.edit();
+    }
+
+    public void setBoolean(String key,boolean value){
+        editor.putBoolean(key,value);
+        editor.commit();
+    }
+
+    public boolean getBoolean(String key){
+        return sharedPreferences.getBoolean(key,false);
+    }
+
+    public void setString(String key,String value){
+        editor.putString(key,value);
+        editor.commit();
+    }
+
+    public String getString(String key){
+        return sharedPreferences.getString(key,"");
+    }
+
+
+}

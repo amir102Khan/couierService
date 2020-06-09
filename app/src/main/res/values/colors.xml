@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121B93</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#121B93</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkBlue">#121B93</color>
+    <color name="colorPurple">#4E1293</color>
+    <color name="colorBtnFill">#121B93B0</color>
+    <color name="colorBtnBorder">#121B939C</color>
+    <color name="colorDrawerBg">#121B9375</color>
+    <color name="colorGrey">#6400003D</color>
+
+</resources>
+
+

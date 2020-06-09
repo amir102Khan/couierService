@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_splash"
+        tools:context=".fragments.FillCompanyDetails">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company Name"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/colorBlack"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ed_consignment_num"
+                        android:hint="enter company "
+                        android:maxLength="20"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textSize="@dimen/_12sdp"/>
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ed_weight"
+                        android:hint="weight in Kg's"
+                        android:layout_marginTop="10dp"
+                        android:maxLength="20"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textSize="@dimen/_12sdp"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company Address"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/colorBlack"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ed_cmpny_address"
+                        android:hint="address"
+                        android:drawableEnd="@drawable/ic_home"
+                        android:maxLength="20"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_city_cmpny"
+                            android:hint="city"
+                            android:layout_weight="1"
+                            android:maxLength="20"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_state_cmpny"
+                            android:hint="state"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:maxLength="20"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ed_pickup_pincode"
+                        android:hint="pincode"
+                        android:maxLength="20"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/segoe_ui"
+                        android:inputType="number"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ed_pickup_number"
+                        android:hint="phone number"
+                        android:maxLength="20"
+                        android:inputType="number"
+                        android:drawableEnd="@drawable/ic_phone"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zone A"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/colorBlack"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ed_doc_type_a"
+                        android:hint="document type"
+                        android:maxLength="20"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:background="@drawable/editbox_bg"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ed_doc_charges_a"
+                        android:hint="enter charge"
+                        android:layout_weight="1"
+                        android:maxLength="20"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:background="@drawable/editbox_bg"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_non_doc_type_a"
+                            android:hint="document type"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_non_doc_charges_a"
+                            android:hint="enter charge"
+                            android:layout_weight="1"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zone B"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/colorBlack"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_doc_type_b"
+                            android:hint="document type"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_doc_charges_b"
+                            android:hint="enter charge"
+                            android:layout_weight="1"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_non_doc_type_b"
+                            android:hint="document type"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_non_doc_charges_b"
+                            android:hint="enter charge"
+                            android:layout_weight="1"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zone C"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/colorBlack"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_doc_type_c"
+                            android:hint="document type"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_doc_charges_c"
+                            android:hint="enter charge"
+                            android:layout_weight="1"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_non_doc_type_c"
+                            android:hint="document type"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ed_non_doc_charges_c"
+                            android:hint="enter charge"
+                            android:layout_weight="1"
+                            android:maxLength="20"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:background="@drawable/editbox_bg"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textSize="@dimen/_12sdp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company Details"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/colorBlack"/>
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ed_gst_num"
+                        android:hint="gst number "
+                        android:maxLength="20"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textSize="@dimen/_12sdp"/>
+
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:text="Save"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_bg"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/btn_save"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>
